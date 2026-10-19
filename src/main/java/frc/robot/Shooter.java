@@ -1,3 +1,7 @@
+package frc.robot;
+
+
+
 public class Shooter {
-    m_motorRight.setInverted(true)
+    
 }
