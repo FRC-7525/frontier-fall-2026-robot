@@ -2,6 +2,7 @@ package frc.robot;
 
 import edu.wpi.first.wpilibj.motorcontrol.VictorSP;
 
+
 public class Shooter {
 
     private boolean _isShooting = false;
