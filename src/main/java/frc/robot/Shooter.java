@@ -26,8 +26,5 @@ public class Shooter {
             _shooterMotorController.set(0);
         }
     }
-
-
-
     
 }
