@@ -25,4 +25,9 @@ public class Shooter {
             _shooterMotorController.set(0);
         }
     }
+
+    public enum ShooterState{
+        OFF,
+        ON
+    }
 }
