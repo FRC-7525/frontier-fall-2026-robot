@@ -27,7 +27,11 @@ public class Shooter {
     }
 
     public enum ShooterState{
-        OFF,
-        ON
+        IDLE,
+        SHOOTING
+
+        private String
     }
+
+    
 }
