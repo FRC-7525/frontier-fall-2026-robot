@@ -1,28 +1,41 @@
-/* 
- * Shooter up 
- * Shooter down
- * Shooter intake
- */
-
 package frc.robot;
 
-public class IntakeSubsystem {
-
-    public enum intakeArmStates {
-        DOWN ,
-        UP;
-    }
-    private double speed = 1.0;
-
-    public void toggleIntakeInOut(){
-
+class IntakeSubsystem {
+    public enum IntakePositions{
+        DOWN,
+        UP
     }
 
-    public void toggleIntake(){
+    public IntakePositions CurrentIntakePosition = IntakePositions.DOWN;
+
+    public void ChangeIntakePositions() {
+        if (CurrentIntakePosition == IntakePositions.DOWN){
+            
+            CurrentIntakePosition = IntakePositions.UP;
+        }else{
+            CurrentIntakePosition = IntakePositions.DOWN;
+        }
+
+
+
+    
+
+
 
     }
 
-    public void periodic(){
+    public static void main(String[] args){
+
+
+        //ChangeIntakePositions();
+        IntakeSubsystem sub = new IntakeSubsystem();
+        sub.ChangeIntakePositions();
+        System.out.println(sub.CurrentIntakePosition);
 
     }
+
 }
+    
+
+
+
