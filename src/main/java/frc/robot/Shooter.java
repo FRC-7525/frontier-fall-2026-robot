@@ -7,7 +7,7 @@ public class Shooter {
 
     private boolean _isShooting = false;
     
-    private VictorSP _shooterMotorController;
+    private final VictorSP _shooterMotorController;
 
     public Shooter(){
         _shooterMotorController = new VictorSP(5);
@@ -20,10 +20,10 @@ public class Shooter {
     // motor control
     public void shooterPeriodic(){
         if(_isShooting){
-            _shooterMotorController.set(1);
+            _shooterMotorController.set(1.0);
         }
         else{
-            _shooterMotorController.set(0);
+            _shooterMotorController.set(0.0);
         }
     }
     

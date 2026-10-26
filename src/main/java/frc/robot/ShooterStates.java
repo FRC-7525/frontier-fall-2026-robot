@@ -1,7 +1,5 @@
 package frc.robot;
 
-import static frc.robot.Shooter.ShooterConstants;
-
 import edu.wpi.first.units.measure.AngularVelocity;
 
 public class ShooterStates {
