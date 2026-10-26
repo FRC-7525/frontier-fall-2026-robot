@@ -1,18 +1,20 @@
+package frc.robot.Subsystems.Intake;
 /* 
  * Shooter up 
  * Shooter down
  * Shooter intake
  */
 
-package frc.robot;
 
-public class IntakeSubsystem {
+import edu.wpi.first.wpilibj.motorcontrol.VictorSP;
 
-    public enum intakeArmStates {
-        DOWN ,
-        UP;
-    }
+
+public class Intake {
+
+
     private double speed = 1.0;
+    private VictorSP _toggleIntakeMotorController = new VictorSP(1);
+    private VictorSP _
 
     public void toggleIntakeInOut(){
 

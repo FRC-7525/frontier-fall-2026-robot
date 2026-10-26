@@ -1,5 +1,11 @@
 package frc.robot.Subsystems.Intake;
 
-public class IntakeStates {
+public enum IntakeStates {
+    INTAKE_IN,
+    INTAKE_OUT,
+    INTAKING;
+
+
+
     
 }
