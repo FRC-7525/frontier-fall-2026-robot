@@ -6,6 +6,7 @@
   "configurations": [
     {
       "type": "java",
+<<<<<<< HEAD
       "name": "IntakeSubsystem",
       "request": "launch",
       "mainClass": "frc.robot.IntakeSubsystem",
@@ -13,6 +14,8 @@
     },
     {
       "type": "java",
+=======
+>>>>>>> c9bd54e6e228e88d46410c2ac8f4cce8808a2b5f
       "name": "Main",
       "request": "launch",
       "mainClass": "frc.robot.Main",
