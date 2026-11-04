@@ -13,8 +13,7 @@ public class Intake {
 
 
     private double speed = 1.0;
-    private VictorSP _toggleIntakeMotorController = new VictorSP(1);
-    private VictorSP _
+    private VictorSP toggleIntakeMotorController = new VictorSP(1);
 
     public void toggleIntakeInOut(){
 
