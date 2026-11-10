@@ -1,16 +1,18 @@
 package frc.robot;
 
-import edu.wpi.first.wpilibj.motorcontrol.VictorSP;
+import edu.wpi.first.wpilibj.motorcontrol.PWMVictorSPX;
+import edu.wpi.first.wpilibj.XboxController;
+import edu.wpi.first.wpilibj.motorcontrol.Talon;
 
 
 public class Shooter {
 
     private boolean _isShooting = false;
     
-    private final VictorSP _shooterMotorController;
+    private final PWMVictorSPX _shooterMotorController;
 
     public Shooter(){
-        _shooterMotorController = new VictorSP(5);
+        _shooterMotorController = new PWMVictorSPX(5);
     }
 
     public void toggleShooter() {
